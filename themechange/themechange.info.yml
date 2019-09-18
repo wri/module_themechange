@@ -1,0 +1,16 @@
+name: Theme Change
+description: Sets theme based on path.
+package: WRI
+
+type: module
+core: 8.x
+
+themechange.info:
+  path: '/themetest/info'
+  defaults:
+    _controller: '\Drupal\themechange\Controller\ThemechangeController::info'
+    _title: 'About Themechange'
+  requirements:
+    _permission: 'access content'
+  options:
+    _custom_theme: 'bartik'

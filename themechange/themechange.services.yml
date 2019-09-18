@@ -1,0 +1,6 @@
+services:
+  theme.negotiator.themechange:
+    class: Drupal\themechange\Theme\ThemeNegotiator
+    arguments: []
+    tags:
+      - { name: theme_negotiator, priority: -50 }
